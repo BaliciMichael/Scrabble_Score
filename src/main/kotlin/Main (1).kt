@@ -16,7 +16,8 @@ fun main(args: Array<String>) {
         print("Enter a word and compute the Scrabble Score: ")
         val word = input.nextLine()
         //TODO change to use a string template:
-        println(word + " has a value of" + scrabbleScore.scoreWord(word))
+        println("$word has a value of ${scrabbleScore.scoreWord(word)}")
+
     }
 }
 

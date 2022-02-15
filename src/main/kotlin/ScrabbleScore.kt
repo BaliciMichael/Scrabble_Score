@@ -2,7 +2,8 @@ class ScrabbleScore {
 
     fun scoreWord(word: String): Int{
         //TODO calculate using the scoreLetter method below, the scrabble value of the word passed as a parameter
-        return 0
+        return word.sumOf { scoreLetter(it.uppercaseChar()) }// i used the uppercaseChar() so that any input no matter what will always be valid
+
     }
 
     //TODO the program if the user enters in any chars other than capital letters...try fix this.
